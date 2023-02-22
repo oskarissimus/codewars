@@ -1,4 +1,5 @@
-const expandedForm = num => String(num)
+const expandedForm = num => num
+    .toString()
     .split('')
     .reverse()
     .map((value, index) => value.padEnd(index + 1, "0"))
