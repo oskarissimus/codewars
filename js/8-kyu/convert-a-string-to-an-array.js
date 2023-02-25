@@ -1,0 +1,1 @@
+const stringToArray = s => s.split(" ")
