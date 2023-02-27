@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 fn are_you_playing_banjo(name: &str) -> String {
     let first = name.chars().nth(0).unwrap();
     if first == 'r' || first == 'R' {

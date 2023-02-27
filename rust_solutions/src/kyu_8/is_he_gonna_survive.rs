@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 fn hero(bullets: u16, dragons: u16) -> bool {
     match dragons {
         0 => true,

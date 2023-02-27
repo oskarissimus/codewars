@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 fn century(year: u32) -> u32 {
     let d = year / 100;
     let remainder = year % 100;

@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 fn rps(p1: &str, p2: &str) -> &'static str {
     if p1wins(p1, p2) {
         return "Player 1 won!";
