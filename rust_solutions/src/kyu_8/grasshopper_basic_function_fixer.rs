@@ -1,6 +1,5 @@
 fn add_five(num: i32) -> i32 {
-    let total = num + 5;
-    total
+    num + 5
 }
 
 // Add your tests here.
