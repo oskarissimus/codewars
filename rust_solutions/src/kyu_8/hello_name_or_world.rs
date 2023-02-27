@@ -7,11 +7,9 @@ fn hello(name: &str) -> String {
 }
 
 fn format_name(name: &str) -> String {
-    let first = &name[0..1].to_uppercase();
-    let lowercase_name = name.to_lowercase();
-    let rest = &lowercase_name[1..];
-    let fromatted_name = format!("Hello, {}{}!", first, rest);
-    fromatted_name
+    let first = name[..1].to_uppercase();
+    let rest = name[1..].to_lowercase();
+    format!("Hello, {}{}!", first, rest)
 }
 // Add your tests here.
 // See https://doc.rust-lang.org/stable/rust-by-example/testing/unit_testing.html
