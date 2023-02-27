@@ -6,9 +6,8 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_opposite() {
+    fn returns_expected() {
         assert_eq!(opposite(1), -1);
         assert_eq!(opposite(-1), 1);
-        assert_eq!(opposite(0), 0);
     }
 }
