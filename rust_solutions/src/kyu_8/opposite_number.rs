@@ -1,5 +1,5 @@
-pub fn opposite(num: i32) -> i32 {
-    -num
+fn opposite(number: i32) -> i32 {
+    return number * -1;
 }
 #[cfg(test)]
 mod tests {

@@ -1,1 +1,1 @@
-pub mod opposite_number;
+mod opposite_number;
