@@ -1,3 +1,4 @@
 mod convert_boolean_values_to_strings_yes_or_no;
 mod grasshopper_basic_function_fixer;
 mod opposite_number;
+mod rock_paper_scissors;
