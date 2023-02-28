@@ -10,3 +10,4 @@ mod is_he_gonna_survive;
 mod is_this_a_triangle;
 mod opposite_number;
 mod rock_paper_scissors;
+mod simple_multiplication;
