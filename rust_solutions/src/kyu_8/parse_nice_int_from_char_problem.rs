@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 fn get_age(age: &str) -> u32 {
-    (age.chars().next().unwrap() as u32) - ('0' as u32)
+    age[..1].parse().unwrap()
 }
 
 #[test]
