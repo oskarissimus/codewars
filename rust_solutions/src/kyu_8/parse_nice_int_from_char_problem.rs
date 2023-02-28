@@ -1,9 +1,6 @@
 #![allow(dead_code)]
 fn get_age(age: &str) -> u32 {
-    match age.chars().nth(0) {
-        Some(c) => (c as u32) - ('0' as u32),
-        _ => panic!("bad input"),
-    }
+    (age.chars().nth(0).unwrap() as u32) - ('0' as u32)
 }
 
 #[test]
