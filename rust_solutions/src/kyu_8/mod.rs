@@ -11,3 +11,4 @@ mod is_this_a_triangle;
 mod opposite_number;
 mod rock_paper_scissors;
 mod simple_multiplication;
+mod thinkful_logic_drills_traffic_light;
