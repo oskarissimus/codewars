@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 fn switch_it_up(n: usize) -> &'static str {
     match n {
         0 => "Zero",
