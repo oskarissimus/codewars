@@ -2,6 +2,7 @@ mod are_you_playing_banjo;
 mod century_from_year;
 mod convert_boolean_values_to_strings_yes_or_no;
 mod count_by_x;
+mod expressions_matter;
 mod function_2_squaring_an_argument;
 mod grasshopper_basic_function_fixer;
 mod grasshopper_messi_goals;
