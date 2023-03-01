@@ -1,20 +1,11 @@
+#![allow(dead_code)]
 fn gimme(input_array: [i32; 3]) -> usize {
-    let index_of_max = input_array
-        .iter()
-        .enumerate()
-        .max_by(|(_, a), (_, b)| a.cmp(b))
-        .map(|(index, _)| index)
-        .unwrap();
-    let index_of_min = input_array
-        .iter()
-        .enumerate()
-        .min_by(|(_, a), (_, b)| a.cmp(b))
-        .map(|(index, _)| index)
-        .unwrap();
+    let max = input_array.iter().max().unwrap();
+    let min = input_array.iter().min().unwrap();
     input_array
         .iter()
         .enumerate()
-        .filter(|(index, _)| *index != index_of_max && *index != index_of_min)
+        .filter(|(_, val)| *val != min && *val != max)
         .map(|(index, _)| index)
         .nth(0)
         .unwrap()
