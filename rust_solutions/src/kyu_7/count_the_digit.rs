@@ -1,12 +1,10 @@
 #![allow(dead_code)]
 fn nb_dig(n: i32, d: i32) -> i32 {
-    let mut output = 0_i32;
     let digit = char::from_digit(d as u32, 10).unwrap();
-    for k in 0..=n {
-        let sq = format!("{}", k * k);
-        output += sq.matches(digit).count() as i32
-    }
-    output
+    (0..=n)
+        .map(|k| k * k)
+        .map(|sq| format!("{}", sq))
+        .fold(0, |acc, sq| acc + sq.matches(digit).count() as i32)
 }
 #[cfg(test)]
 mod tests {
