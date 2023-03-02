@@ -1,4 +1,5 @@
 mod binary_addition;
+mod count_the_digit;
 mod find_the_middle_element;
 mod find_the_next_perfect_square;
 mod name_shuffler;
