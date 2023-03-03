@@ -16,6 +16,7 @@ mod opposite_number;
 mod parse_nice_int_from_char_problem;
 mod rock_paper_scissors;
 mod simple_multiplication;
+mod string_repeat;
 mod switch_it_up;
 mod thinkful_logic_drills_traffic_light;
 mod third_angle_of_a_triangle;
