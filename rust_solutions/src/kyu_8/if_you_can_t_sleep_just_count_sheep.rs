@@ -1,8 +1,6 @@
 #![allow(dead_code)]
-
-use itertools::Itertools;
 fn count_sheep(n: u32) -> String {
-    (1..=n).map(|i| format!("{} sheep...", i)).join("")
+    (1..=n).map(|i| format!("{} sheep...", i)).collect()
 }
 
 #[cfg(test)]
