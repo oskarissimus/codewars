@@ -7,6 +7,7 @@ mod find_multiples_of_a_number;
 mod function_2_squaring_an_argument;
 mod grasshopper_basic_function_fixer;
 mod grasshopper_messi_goals;
+mod grasshopper_messi_goals_function;
 mod grasshopper_terminal_game_move_function;
 mod hello_name_or_world;
 mod i_love_you_a_little_a_lot_passionately_not_at_all;
