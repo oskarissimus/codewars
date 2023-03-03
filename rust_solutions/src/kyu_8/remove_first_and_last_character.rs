@@ -1,15 +1,6 @@
 #![allow(dead_code)]
 fn remove_char(s: &str) -> String {
-    s.chars()
-        .skip(1)
-        .collect::<String>()
-        .chars()
-        .rev()
-        .skip(1)
-        .collect::<String>()
-        .chars()
-        .rev()
-        .collect()
+    s[1..s.len() - 1].to_string()
 }
 #[cfg(test)]
 mod tests {
