@@ -1,17 +1,17 @@
 #![allow(dead_code)]
 fn check_exam(arr_a: &[&str], arr_b: &[&str]) -> i64 {
-    let points = arr_a.iter().zip(arr_b).fold(0, |points, (correct, given)| {
-        points
-            + match *given {
-                answer if &answer == correct => 4,
-                "" => 0,
-                _ => -1,
-            }
-    });
-    match points {
-        p if p > 0 => p,
-        _ => 0,
-    }
+    arr_a
+        .iter()
+        .zip(arr_b)
+        .fold(0, |points, (correct, given)| {
+            points
+                + match *given {
+                    answer if &answer == correct => 4,
+                    "" => 0,
+                    _ => -1,
+                }
+        })
+        .max(0)
 }
 #[cfg(test)]
 mod tests {
