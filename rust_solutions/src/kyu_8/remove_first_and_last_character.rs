@@ -1,15 +1,11 @@
 #![allow(dead_code)]
 fn remove_char(s: &str) -> String {
     s.chars()
-        .enumerate()
-        .filter(|(i, _)| *i != 0)
-        .map(|(_, v)| v)
+        .skip(1)
         .collect::<String>()
         .chars()
         .rev()
-        .enumerate()
-        .filter(|(i, _)| *i != 0)
-        .map(|(_, v)| v)
+        .skip(1)
         .collect::<String>()
         .chars()
         .rev()
