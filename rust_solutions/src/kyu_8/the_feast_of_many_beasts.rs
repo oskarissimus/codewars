@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 fn feast(beast: &str, dish: &str) -> bool {
-    beast.chars().next() == dish.chars().next() && beast.chars().last() == dish.chars().last()
+    beast[..1] == dish[..1] && beast.chars().last() == dish.chars().last()
 }
 
 // Rust test example:
