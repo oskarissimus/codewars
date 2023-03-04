@@ -15,6 +15,7 @@ mod i_love_you_a_little_a_lot_passionately_not_at_all;
 mod if_you_can_t_sleep_just_count_sheep;
 mod is_he_gonna_survive;
 mod is_this_a_triangle;
+mod n_th_power;
 mod opposite_number;
 mod parse_nice_int_from_char_problem;
 mod remove_first_and_last_character;
