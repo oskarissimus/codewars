@@ -1,9 +1,6 @@
 #![allow(dead_code)]
 fn index(nums: &[u64], n: usize) -> Option<u64> {
-    match n {
-        x if x < nums.len() => Some(nums[n].pow(n as u32)),
-        _ => None,
-    }
+    Some(nums.get(n)?.pow(n as u32))
 }
 
 #[cfg(test)]
