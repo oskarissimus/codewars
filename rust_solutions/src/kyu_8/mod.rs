@@ -23,6 +23,7 @@ mod rock_paper_scissors;
 mod simple_multiplication;
 mod string_repeat;
 mod switch_it_up;
+mod the_feast_of_many_beasts;
 mod thinkful_logic_drills_traffic_light;
 mod third_angle_of_a_triangle;
 mod what_is_between;
