@@ -25,6 +25,7 @@ mod remove_first_and_last_character;
 mod rock_paper_scissors;
 mod simple_multiplication;
 mod string_repeat;
+mod sum_mixed_array;
 mod switch_it_up;
 mod the_feast_of_many_beasts;
 mod thinkful_logic_drills_traffic_light;
