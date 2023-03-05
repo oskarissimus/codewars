@@ -1,16 +1,12 @@
 #![allow(dead_code)]
 use either::Either;
-
 fn sum_mix(arr: &[Either<i32, String>]) -> i32 {
-    let mut sum = 0;
-    for elem in arr.iter() {
-        let num = match elem {
+    arr.iter().fold(0, |sum, n| {
+        sum + match n {
             Either::Left(elem) => *elem,
             Either::Right(elem) => elem.parse().unwrap(),
-        };
-        sum += num
-    }
-    sum
+        }
+    })
 }
 
 // Add your tests here.
