@@ -6,21 +6,11 @@ fn sum_mix(arr: &[Either<i32, String>]) -> i32 {
     for elem in arr.iter() {
         let num = match elem {
             Either::Left(elem) => *elem,
-            Either::Right(elem) => str_to_i32(elem),
+            Either::Right(elem) => elem.parse().unwrap(),
         };
         sum += num
     }
     sum
-}
-
-fn str_to_i32(s: &String) -> i32 {
-    let mut result = 0;
-    for (idx, digit_char) in s.chars().rev().enumerate() {
-        let digit_int = digit_char.to_digit(10).unwrap() as i32;
-        let factor = i32::pow(10, idx as u32);
-        result += digit_int * factor;
-    }
-    result
 }
 
 // Add your tests here.
