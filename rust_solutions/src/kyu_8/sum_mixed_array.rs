@@ -1,12 +1,12 @@
 #![allow(dead_code)]
 use either::Either;
 fn sum_mix(arr: &[Either<i32, String>]) -> i32 {
-    arr.iter().fold(0, |sum, n| {
-        sum + match n {
+    arr.iter()
+        .map(|n| match n {
             Either::Left(elem) => *elem,
             Either::Right(elem) => elem.parse().unwrap(),
-        }
-    })
+        })
+        .sum()
 }
 
 // Add your tests here.
