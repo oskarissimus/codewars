@@ -1,11 +1,11 @@
 #![allow(dead_code)]
 fn likes(names: &[&str]) -> String {
-    match names.len() {
-        0 => "no one likes this".to_string(),
-        1 => format!("{} likes this", names[0]),
-        2 => format!("{} and {} like this", names[0], names[1]),
-        3 => format!("{}, {} and {} like this", names[0], names[1], names[2]),
-        n => format!("{}, {} and {} others like this", names[0], names[1], n - 2),
+    match names {
+        [] => "no one likes this".to_string(),
+        [a] => format!("{} likes this", a),
+        [a, b] => format!("{} and {} like this", a, b),
+        [a, b, c] => format!("{}, {} and {} like this", a, b, c),
+        [a, b, rest @ ..] => format!("{}, {} and {} others like this", a, b, rest.len()),
     }
 }
 
