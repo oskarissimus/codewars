@@ -9,6 +9,7 @@ mod function_2_squaring_an_argument;
 mod grasshopper_basic_function_fixer;
 mod grasshopper_messi_goals;
 mod grasshopper_messi_goals_function;
+mod grasshopper_terminal_game_combat_function;
 mod grasshopper_terminal_game_move_function;
 mod hello_name_or_world;
 mod hex_to_decimal;
