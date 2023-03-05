@@ -3,12 +3,11 @@ fn race(v1: i32, v2: i32, g: i32) -> Option<Vec<i32>> {
     if v1 >= v2 {
         return None;
     }
-    let v1_fps = (v1 as f64) / 3600.0;
-    let v2_fps = (v2 as f64) / 3600.0;
-    let t = (g as f64 / (v2_fps - v1_fps)) as i32;
+    let t = g * 3600 / (v2 - v1);
     let h = extract_hours(t);
     let m = extract_minutes(t);
     let s = extract_seconds(t);
+    // println!("{}, {}, {}",v1,v2,g);
     Some(vec![h, m, s])
 }
 fn extract_hours(t: i32) -> i32 {
@@ -27,5 +26,6 @@ fn basic_tests() {
     assert_eq!(race(80, 100, 40), Some(vec![2, 0, 0]));
     assert_eq!(race(80, 91, 37), Some(vec![3, 21, 49]));
     assert_eq!(race(820, 850, 550), Some(vec![18, 20, 0]));
+    assert_eq!(race(141, 228, 87), Some(vec![1, 0, 0]));
     assert_eq!(race(820, 81, 550), None);
 }
