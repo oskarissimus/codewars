@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 fn grow(nums: Vec<i32>) -> i32 {
-    nums.iter().fold(1, |product, &num| product * num)
+    nums.iter().product()
 }
 
 #[test]
