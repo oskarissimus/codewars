@@ -2,13 +2,7 @@
 
 use itertools::Itertools;
 fn merge_arrays(arr1: &[i32], arr2: &[i32]) -> Vec<i32> {
-    [arr1, arr2]
-        .concat()
-        .iter()
-        .sorted()
-        .dedup()
-        .map(|&n| n)
-        .collect_vec()
+    [arr1, arr2].concat().into_iter().sorted().dedup().collect()
 }
 // Add your tests here.
 // See https://doc.rust-lang.org/stable/rust-by-example/testing/unit_testing.html
