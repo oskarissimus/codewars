@@ -3,6 +3,7 @@ mod beginner_series_4_cockroach;
 mod century_from_year;
 mod convert_boolean_values_to_strings_yes_or_no;
 mod count_by_x;
+mod count_of_positives_sum_of_negatives;
 mod expressions_matter;
 mod find_multiples_of_a_number;
 mod function_2_squaring_an_argument;
