@@ -1,7 +1,6 @@
 #![allow(dead_code)]
 
 use itertools::Itertools;
-use itertools::MinMaxResult::{MinMax, NoElements, OneElement};
 
 fn mx_dif_lg(a1: Vec<&str>, a2: Vec<&str>) -> i32 {
     if a1.is_empty() || a2.is_empty() {
@@ -13,11 +12,8 @@ fn mx_dif_lg(a1: Vec<&str>, a2: Vec<&str>) -> i32 {
     (a2_max - a1_min).max(a1_max - a2_min)
 }
 fn my_min_max(v: Vec<&str>) -> (i32, i32) {
-    match v.iter().map(|s| s.len()).minmax() {
-        MinMax(min, max) => (min as i32, max as i32),
-        OneElement(minmax) => (minmax as i32, minmax as i32),
-        NoElements => (0, 0),
-    }
+    let (min, max) = v.iter().map(|s| s.len()).minmax().into_option().unwrap();
+    (min as i32, max as i32)
 }
 
 #[cfg(test)]
