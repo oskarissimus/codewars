@@ -1,4 +1,5 @@
 mod are_you_playing_banjo;
+mod beginner_reduce_but_grow;
 mod beginner_series_4_cockroach;
 mod century_from_year;
 mod convert_boolean_values_to_strings_yes_or_no;
