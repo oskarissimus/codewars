@@ -1,3 +1,4 @@
+mod beginner_series_3_sum_of_numbers;
 mod binary_addition;
 mod check_the_exam;
 mod count_the_digit;
