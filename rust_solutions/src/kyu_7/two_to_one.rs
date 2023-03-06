@@ -1,14 +1,14 @@
 #![allow(dead_code)]
-use std::collections::HashSet;
-
 use itertools::Itertools;
+use std::collections::HashSet;
 fn longest(a1: &str, a2: &str) -> String {
-    let s = a1.to_owned() + a2;
-    let mut set = HashSet::new();
-    for c in s.chars() {
-        set.insert(c);
-    }
-    set.into_iter().sorted().collect()
+    [a1, a2]
+        .concat()
+        .chars()
+        .collect::<HashSet<_>>()
+        .into_iter()
+        .sorted()
+        .collect()
 }
 
 #[cfg(test)]
