@@ -1,14 +1,9 @@
 #![allow(dead_code)]
 
-use std::{
-    cmp::{max, min},
-    ops::Add,
-};
 fn get_sum(a: i64, b: i64) -> i64 {
-    let (min, max) = (min(a, b), max(a, b));
-    let mean = (a + b) as f64 / 2 as f64;
-    let elements = (max - min).abs().add(1) as f64;
-    (mean * elements) as i64
+    let double_mean = a + b;
+    let elements = (a - b).abs() + 1;
+    double_mean * elements / 2
 }
 
 // See: https://doc.rust-lang.org/book/testing.html
