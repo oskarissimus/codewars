@@ -4,6 +4,7 @@ mod check_the_exam;
 mod count_the_digit;
 mod find_the_middle_element;
 mod find_the_next_perfect_square;
+mod maximum_length_difference;
 mod name_shuffler;
 mod number_of_people_in_the_bus;
 mod regex_validate_pin_code;
