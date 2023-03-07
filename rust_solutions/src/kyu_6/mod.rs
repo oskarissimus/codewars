@@ -1,4 +1,5 @@
 mod bouncing_balls;
+mod multiplication_table;
 mod tortoise_racing;
 mod tribonacci_sequence;
 mod two_sum;
