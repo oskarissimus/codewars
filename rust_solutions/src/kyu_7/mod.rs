@@ -5,6 +5,7 @@ mod count_the_digit;
 mod deodorant_evaporator;
 mod find_the_middle_element;
 mod find_the_next_perfect_square;
+mod form_the_minimum;
 mod maximum_length_difference;
 mod name_shuffler;
 mod number_of_people_in_the_bus;
