@@ -2,6 +2,7 @@ mod beginner_series_3_sum_of_numbers;
 mod binary_addition;
 mod check_the_exam;
 mod count_the_digit;
+mod deodorant_evaporator;
 mod find_the_middle_element;
 mod find_the_next_perfect_square;
 mod maximum_length_difference;
