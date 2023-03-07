@@ -1,4 +1,4 @@
-#![allow(dead_code)]
+#![allow(dead_code, unused_mut)]
 
 use itertools::Itertools;
 fn min_value(mut digits: Vec<i32>) -> i32 {
