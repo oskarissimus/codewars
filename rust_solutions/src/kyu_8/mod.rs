@@ -17,6 +17,7 @@ mod grasshopper_terminal_game_combat_function;
 mod grasshopper_terminal_game_move_function;
 mod hello_name_or_world;
 mod hex_to_decimal;
+mod holiday_viii_duty_free;
 mod i_love_you_a_little_a_lot_passionately_not_at_all;
 mod if_you_can_t_sleep_just_count_sheep;
 mod is_he_gonna_survive;
