@@ -1,6 +1,7 @@
 mod a_rule_of_divisibility_by_13;
 mod bouncing_balls;
 mod multiplication_table;
+mod reverse_or_rotate;
 mod take_a_number_and_sum_its_digits_raised_to_the_consecutive_powers_and_eureka;
 mod tortoise_racing;
 mod tribonacci_sequence;
