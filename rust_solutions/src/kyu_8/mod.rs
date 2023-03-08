@@ -24,6 +24,7 @@ mod if_you_can_t_sleep_just_count_sheep;
 mod is_he_gonna_survive;
 mod is_this_a_triangle;
 mod keep_hydrated;
+mod l_1_bartender_drinks;
 mod merge_two_sorted_arrays_into_one;
 mod n_th_power;
 mod opposite_number;
