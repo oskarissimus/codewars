@@ -1,3 +1,4 @@
+mod a_wolf_in_sheep_s_clothing;
 mod are_you_playing_banjo;
 mod beginner_reduce_but_grow;
 mod beginner_series_4_cockroach;
