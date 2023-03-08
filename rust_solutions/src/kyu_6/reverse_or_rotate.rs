@@ -13,26 +13,25 @@ fn revrot(s: &str, c: usize) -> String {
     chunks
         .iter()
         .map(|chunk| {
-            if sum_of_digits_is_divisible_by_2(chunk.to_string()) {
-                reverse(chunk.to_string())
+            if sum_of_digits_is_divisible_by_2(chunk) {
+                reverse(chunk)
             } else {
                 rotate(chunk.to_string())
             }
         })
         .collect()
 }
-fn sum_of_digits_is_divisible_by_2(s: String) -> bool {
+fn sum_of_digits_is_divisible_by_2(s: &String) -> bool {
     s.chars().map(|c| c.to_digit(10).unwrap()).sum::<u32>() % 2 == 0
 }
 
-fn rotate(s: String) -> String {
-    let mut s_clone = s.clone();
-    let first = s_clone.remove(0);
-    s_clone.push(first);
-    s_clone
+fn rotate(mut s: String) -> String {
+    let first = s.remove(0);
+    s.push(first);
+    s
 }
 
-fn reverse(s: String) -> String {
+fn reverse(s: &String) -> String {
     s.chars().rev().collect()
 }
 
