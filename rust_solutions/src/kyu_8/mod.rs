@@ -2,6 +2,7 @@ mod a_wolf_in_sheep_s_clothing;
 mod are_you_playing_banjo;
 mod beginner_reduce_but_grow;
 mod beginner_series_4_cockroach;
+mod bin_to_decimal;
 mod century_from_year;
 mod convert_boolean_values_to_strings_yes_or_no;
 mod count_by_x;
