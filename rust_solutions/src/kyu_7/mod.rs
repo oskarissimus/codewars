@@ -17,3 +17,4 @@ mod string_ends_with;
 mod sum_of_a_sequence;
 mod two_to_one;
 mod you_re_a_square;
+mod love_vs_friendship;
