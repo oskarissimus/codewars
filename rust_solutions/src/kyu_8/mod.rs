@@ -12,6 +12,7 @@ mod find_maximum_and_minimum_values_of_a_list;
 mod find_multiples_of_a_number;
 mod find_the_smallest_integer_in_the_array;
 mod function_2_squaring_an_argument;
+mod get_character_from_ascii_value;
 mod grasshopper_basic_function_fixer;
 mod grasshopper_messi_goals;
 mod grasshopper_messi_goals_function;
