@@ -1,11 +1,6 @@
 #![allow(dead_code)]
 fn solution(word: &str, ending: &str) -> bool {
-    if word.len() >= ending.len() {
-        let n = word.len() - ending.len();
-        word[n..] == *ending
-    } else {
-        false
-    }
+    word.ends_with(ending)
 }
 // Rust test example:
 // TODO: replace with your own tests (TDD), these are just how-to examples.
