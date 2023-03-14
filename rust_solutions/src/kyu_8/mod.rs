@@ -35,6 +35,7 @@ mod opposite_number;
 mod parse_nice_int_from_char_problem;
 mod powers_of_2;
 mod remove_first_and_last_character;
+mod returning_strings;
 mod rock_paper_scissors;
 mod simple_multiplication;
 mod square_n_sum;
