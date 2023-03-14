@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "python-solutions"
+version = "0.1.0"
+description = ""
+authors = ["Oskar Korczak <oskar.korczak@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "python_solutions"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+codewars-test = {git = "https://github.com/codewars/python-test-framework.git"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
