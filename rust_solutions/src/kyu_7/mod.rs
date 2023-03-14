@@ -3,6 +3,7 @@ mod binary_addition;
 mod check_the_exam;
 mod count_the_digit;
 mod deodorant_evaporator;
+mod digit_digit;
 mod find_the_middle_element;
 mod find_the_next_perfect_square;
 mod form_the_minimum;
