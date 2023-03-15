@@ -29,6 +29,7 @@ mod is_this_a_triangle;
 mod keep_hydrated;
 mod l_1_bartender_drinks;
 mod make_upper_case;
+mod meeting;
 mod merge_two_sorted_arrays_into_one;
 mod n_th_power;
 mod opposite_number;
