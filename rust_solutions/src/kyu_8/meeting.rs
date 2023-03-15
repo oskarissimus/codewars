@@ -3,20 +3,9 @@ use itertools::Itertools;
 fn meeting(s: &str) -> String {
     s.to_uppercase()
         .split(";")
-        .map(|full_name| {
-            let mut splitted = full_name.split(":");
-            let x = splitted.next().unwrap().to_owned();
-            let y = splitted.next().unwrap().to_owned();
-            (x, y)
-        })
-        .sorted_unstable_by(|(a_first, a_last), (b_first, b_last)| {
-            if a_last == b_last {
-                Ord::cmp(a_first, b_first)
-            } else {
-                Ord::cmp(a_last, b_last)
-            }
-        })
+        .map(|full_name| full_name.split_once(":").unwrap())
         .map(|(first, last)| format!("({}, {})", last, first))
+        .sorted_unstable()
         .join("")
 }
 #[cfg(test)]
