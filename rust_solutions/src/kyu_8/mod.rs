@@ -49,5 +49,6 @@ mod the_feast_of_many_beasts;
 mod the_if_function;
 mod thinkful_logic_drills_traffic_light;
 mod third_angle_of_a_triangle;
+mod welcome;
 mod what_is_between;
 mod will_you_make_it;
