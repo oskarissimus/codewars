@@ -32,6 +32,7 @@ mod make_upper_case;
 mod merge_two_sorted_arrays_into_one;
 mod n_th_power;
 mod opposite_number;
+mod opposites_attract;
 mod parse_nice_int_from_char_problem;
 mod powers_of_2;
 mod remove_first_and_last_character;
