@@ -12,6 +12,7 @@ mod greet_me;
 mod love_vs_friendship;
 mod maximum_length_difference;
 mod name_shuffler;
+mod number_of_decimal_digits;
 mod number_of_people_in_the_bus;
 mod regex_validate_pin_code;
 mod reverse_words;
