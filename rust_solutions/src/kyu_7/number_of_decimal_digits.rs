@@ -1,6 +1,6 @@
 fn digits(n: u64) -> usize {
-    (1..)
-        .take_while(|i| 10u64.checked_pow(*i as u32).unwrap_or(0) <= n)
+    (1..20)
+        .take_while(|&i| 10u64.checked_pow(i).unwrap_or(0) <= n)
         .count()
         + 1
 }
@@ -13,4 +13,5 @@ fn sample_test() {
     assert_eq!(digits(12345), 5);
     assert_eq!(digits(9876543210), 10);
     assert_eq!(digits(999999999999999), 15);
+    assert_eq!(digits(10000000000000000000), 20);
 }
