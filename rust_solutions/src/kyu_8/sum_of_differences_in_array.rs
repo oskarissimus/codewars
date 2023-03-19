@@ -5,16 +5,13 @@ fn sum_of_differences(arr: &[i8]) -> Option<i8> {
     match arr.len() {
         0 => None,
         1 => None,
-        _ => {
-            let mut arr_iter = arr.iter().sorted_unstable_by_key(|n| n.mul(-1));
-            let mut previous = arr_iter.next().unwrap();
-            let mut sum = 0;
-            for current in arr_iter {
-                sum = sum + previous - current;
-                previous = current;
-            }
-            Some(sum)
-        }
+        _ => Some(
+            arr.iter()
+                .sorted_unstable_by_key(|n| n.mul(-1))
+                .tuple_windows()
+                .map(|(a, b)| a - b)
+                .sum(),
+        ),
     }
 }
 // Add your tests here.
