@@ -17,6 +17,7 @@ mod get_character_from_ascii_value;
 mod grasshopper_basic_function_fixer;
 mod grasshopper_messi_goals;
 mod grasshopper_messi_goals_function;
+mod grasshopper_summation;
 mod grasshopper_terminal_game_combat_function;
 mod grasshopper_terminal_game_move_function;
 mod hello_name_or_world;
