@@ -7,6 +7,7 @@ mod digit_digit;
 mod even_numbers_in_an_array;
 mod find_the_middle_element;
 mod find_the_next_perfect_square;
+mod fix_string_case;
 mod form_the_minimum;
 mod greet_me;
 mod highest_and_lowest;
