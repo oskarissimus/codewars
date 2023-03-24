@@ -1,11 +1,11 @@
 use itertools::Itertools;
 
 fn min_sum(xs: &[u64]) -> u64 {
-    xs.iter()
-        .permutations(xs.len())
-        .map(|permutation| permutation.chunks(2).map(|chunk| chunk[0] * chunk[1]).sum())
-        .min()
-        .unwrap()
+    let len = xs.len();
+    let sorted = xs.iter().sorted_unstable();
+    let first_half = sorted.clone().take(len / 2);
+    let second_half = sorted.clone().skip(len / 2);
+    first_half.zip(second_half.rev()).map(|(a, b)| a * b).sum()
 }
 
 #[cfg(test)]
