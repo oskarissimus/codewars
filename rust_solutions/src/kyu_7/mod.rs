@@ -12,6 +12,7 @@ mod greet_me;
 mod highest_and_lowest;
 mod love_vs_friendship;
 mod maximum_length_difference;
+mod minimize_sum_of_array_array_series_1;
 mod name_shuffler;
 mod number_of_decimal_digits;
 mod number_of_people_in_the_bus;
