@@ -3,6 +3,7 @@ function rot13(message) {
 }
 
 function rotateLetter(letter) {
+    if (!letter.match(/[a-zA-Z]/)) return letter
     const isUpperCase = letter.toUpperCase() == letter
     const first = (isUpperCase ? 'A' : 'a').charCodeAt()
     const charCode = letter.charCodeAt()
