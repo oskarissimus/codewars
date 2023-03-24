@@ -1,10 +1,11 @@
 function isPangram(string) {
     let alphabet = ''
+    const processed = string.toLowerCase()
     for (let charCode = 'a'.charCodeAt(); charCode <= 'z'.charCodeAt(); charCode++) {
         alphabet += String.fromCharCode(charCode)
     }
     for (letter of alphabet) {
-        if (!string.match(letter)) return false
+        if (!processed.match(letter)) return false
     }
     return true
 }
