@@ -9,6 +9,7 @@ mod find_the_middle_element;
 mod find_the_next_perfect_square;
 mod form_the_minimum;
 mod greet_me;
+mod highest_and_lowest;
 mod love_vs_friendship;
 mod maximum_length_difference;
 mod name_shuffler;
