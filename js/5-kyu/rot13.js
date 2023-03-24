@@ -15,7 +15,11 @@ const assert = chai.assert;
 
 describe("Tests", function () {
     it("Sample tests", function () {
-        for (const [input, expected] of [["test", "grfg"], ["Test", "Grfg"]]) {
+        for (const [input, expected] of [
+            ["test", "grfg"],
+            ["Test", "Grfg"],
+            ['Ruby is cool!', 'Ehol vf pbby!']
+        ]) {
             assert.strictEqual(rot13(input), expected, `Test failed with messsage = '${input}'`);
         }
     });
