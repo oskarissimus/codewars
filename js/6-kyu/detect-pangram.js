@@ -1,13 +1,7 @@
 function isPangram(string) {
-    let alphabet = ''
-    const processed = string.toLowerCase()
-    for (let charCode = 'a'.charCodeAt(); charCode <= 'z'.charCodeAt(); charCode++) {
-        alphabet += String.fromCharCode(charCode)
-    }
-    for (letter of alphabet) {
-        if (!processed.match(letter)) return false
-    }
-    return true
+    const matches = [...string.toLowerCase().matchAll(/[a-z]/g)]
+    const set = new Set(matches.map(match => match[0]))
+    return set.size === 26
 }
 
 const chai = require("chai");
