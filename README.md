@@ -18,10 +18,39 @@ poetry install
 poetry run python tests/kyu_8/basic_mathematical_operations_test.py
 ```
 
-## Javascript
+## JavaScript
 to run javascript tests run mocha with the path to the file, for example:
 ```sh
 cd js
 npm install
 npm test ./8-kyu/basic-mathematical-operations.js
 ```
+useful configuration to debug js files
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "debug js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeExecutable": "npm",
+            "program": "${file}",
+            "runtimeArgs": [
+                "test"
+            ],
+            "cwd": "${workspaceFolder}/js"
+        }
+    ]
+}
+```
+
+## TypeScript
+```sh
+cd typescript_solutions
+npm test
+```
+
