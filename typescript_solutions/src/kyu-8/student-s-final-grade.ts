@@ -12,5 +12,6 @@ describe("Student's Final Grade", () => {
     it("Fixed tests", () => {
         assert.strictEqual(finalGrade(100, 12), 100);
         assert.strictEqual(finalGrade(85, 5), 90);
+        assert.strictEqual(finalGrade(71, 5), 75);
     });
 });
