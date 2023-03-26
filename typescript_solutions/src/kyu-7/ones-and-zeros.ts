@@ -1,5 +1,5 @@
 export function binaryArrayToNumber(arr: number[]): number {
-    return arr[0] * 8 + arr[1] * 4 + arr[2] * 2 + arr[3]
+    return parseInt(arr.join(""), 2)
 };
 
 import { assert } from "chai";
