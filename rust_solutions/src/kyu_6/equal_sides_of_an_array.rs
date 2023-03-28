@@ -1,29 +1,16 @@
-use itertools::Itertools;
-
 fn find_even_index(arr: &[i32]) -> Option<usize> {
-    let left = arr
-        .iter()
-        .scan(0, |partial_sum, &n| {
-            *partial_sum += n;
-            Some(*partial_sum)
-        })
-        .collect_vec();
-    let mut right = arr
-        .iter()
-        .rev()
-        .scan(0, |partial_sum, &n| {
-            *partial_sum += n;
-            Some(*partial_sum)
-        })
-        .collect_vec();
-    right.reverse();
-
-    for i in 0..arr.len() {
-        if left[i] == right[i] {
+    let sum = arr.iter().sum();
+    let len = arr.len();
+    let mut left = 0;
+    let mut right = sum;
+    for i in 0..len {
+        right -= arr[i];
+        if left == right {
             return Some(i);
         }
+        left += arr[i];
     }
-    return None;
+    None
 }
 
 // Add your tests here.
