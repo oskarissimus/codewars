@@ -1,12 +1,13 @@
+use std::ops::Add;
+
 fn find_even_index(arr: &[i32]) -> Option<usize> {
-    let mut left = vec![];
-    let mut sum = 0;
-    for i in 0..arr.len() {
-        left.push(sum);
-        sum += arr[i];
-    }
+    let left = arr.iter().fold(vec![0], |partial_sums, n| {
+        let mut new_sum = partial_sums.clone();
+        new_sum.push(partial_sums.last().unwrap().add(n));
+        new_sum
+    });
     let mut right = vec![];
-    sum = 0;
+    let mut sum = 0;
     for i in (0..arr.len()).rev() {
         right.push(sum);
         sum += arr[i];
