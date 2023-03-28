@@ -1,5 +1,6 @@
 mod a_rule_of_divisibility_by_13;
 mod bouncing_balls;
+mod equal_sides_of_an_array;
 mod highest_scoring_word;
 mod multiplication_table;
 mod reverse_or_rotate;
