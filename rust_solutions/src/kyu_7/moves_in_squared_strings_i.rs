@@ -9,7 +9,7 @@ fn vert_mirror(s: String) -> String {
         .join("\n")
 }
 // first parameter: dots have to be replaced by function of one variable
-fn oper<F: Fn(String) -> String>(func: F, s: String) -> String {
+fn oper(func: fn(String) -> String, s: String) -> String {
     func(s)
 }
 
